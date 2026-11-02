@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dijkstra Algorithm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Dijkstra's Algorithm</h1>
+        <p>Shortest Path Finder</p>
+    </header>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>
+            Dijkstra's Algorithm is used to
+            find the shortest path between
+            vertices in a weighted graph.
+        </p>
+    </section>
+
+    <section>
+        <h2>How it works</h2>
+        <p>
+            1. Select the starting vertex.<br>
+            2. Find the smallest distance.<br>
+            3. Update neighbouring vertices.<br>
+            4. Repeat until the destination
+            is reached.
+        </p>
+    </section>
+
+    <section>
+        <h2>Shortest Path Demo</h2>
+
+        <label>Starting Vertex:</label>
+
+        <select id="source">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+            <option>E</option>
+        </select>
+
+        <button onclick="runAlgorithm()">
+            Find Shortest Path
+        </button>
+
+        <p id="result"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
